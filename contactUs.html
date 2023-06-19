@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>MaskIt | צרו קשר</title>
+    <meta name="description" content="יצירת קשר עם האתר המרכז מתכונים למסכות טבעיות בהכנה ביתית" />
+    <meta name="keywords" content="מסכות, טבעי, מסכות טבעיות, בריאות, עור פנים, צור קשר, מסכה חדשה" />
+    <meta name="author" content="Eden Nisuyeve, Stav Rakia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="images/logo.jpg" rel="icon" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <!--HEADER-->
+        <header>
+            <nav aria-label="Top Navigation" id="nav1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logopic" src="images/לוגו אתר maskit-02.png" alt="logoSite" />
+                    </a>
+                </div>
+                <div class="categories">
+                    <ul>
+                        <li><a id="notActive" href="#">למה לבחור טבעי</a></li>
+                        <li><a href="wrinkles.html">מסכות לקמטים</a></li>
+                        <li><a href="acne.html">מסכות לאקנה</a></li>
+                        <li><a id="notActive" href="#">מסכות לעור יבש</a></li>
+                        <li><a id="notActive" href="#">מסכות לפיגמנטציה</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- פירורי לחם -->
+            <nav aria-label="breadcrumbs" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">עמוד הבית</a></li>
+                    <li class="presentPage">צרו קשר</li>
+                </ol>
+            </nav>
+
+            <!-- כותרת ראשית -->
+            <div class="firstContent">
+                <img class="topImage" src="images/pic3.jpg" alt="" />
+                <h1 class="title1">צרו קשר</h1>
+            </div>
+
+        </header>
+        <!--התוכן שלנו-->
+        <main>
+            <section class="startContant">
+                <div>
+                    <p>
+                        בא לכם להציע לנו הצעה למסכה שלא נוכל לסרב לה?
+                        <br />
+                        או אולי לספר לנו על משהו שחסר באתר והייתם רוצים שנוסיף?
+                        <br />
+                        אנחנו כאן בשבילכם בשביל לשמוע ולשפר
+                    </p>
+                </div>
+            </section>
+            <section class="allFormPage">
+                <form id="contactForm">
+                    <input type="hidden" id="myEmail" name="name" value="eden23619@gmail.com" />
+                    <div>
+                        <label for="firstName">*שם פרטי:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">*שם משפחה:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div>
+                        <fieldset class="gender">
+                            <legend id="gendertitle">*מין:</legend>
+                            <label><input type="radio" name="gender" value="male"> זכר</label>
+                            <label><input type="radio" name="gender" value="female"> נקבה</label>
+                            <label><input type="radio" name="gender" value="other"> אחר</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="email">*מייל:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="maskType">על איזה מסכות תרצו לדבר איתנו?</label>
+                        <select id="maskType" name="maskType" required>
+                            <option value="1" selected>בחרו את סוג המסכות</option>
+                            <option value="2">מסכות לקמטים</option>
+                            <option value="3">מסכות לאקנה</option>
+                            <option value="4">מסכות לעור יבש</option>
+                            <option value="5">מסכות לפיגמנטציה</option>
+                            <option value="6">אני רוצה להמליץ על מסכה</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">*תוכן ההודעה:</label>
+                        <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="confirmation" id="confirmation" required> *אישור לקבלת תוכן פרסומי למייל</label>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit">שלחו</button>
+                    </div>
+                    <div id="feedback"></div>
+                </form>
+            </section>
+            <br />
+            <br />
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <nav aria-label="footer" class="footer">
+                <ul>
+                    <li class="markThis"><a href="contactUs.html">צרו קשר</a></li>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                </ul>
+                <p>כל הזכויות שמורות ליוצרות אתר MaskIt</p>
+                <p>התמונות נלקחו מאתר <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+

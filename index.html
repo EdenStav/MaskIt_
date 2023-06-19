@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>MaskIt | עמוד הבית</title>
+    <meta name="description" content="אתר המרכז מתכונים למסכות טבעיות בהכנה ביתית" />
+    <meta name="keywords" content="מסכות, טבעי, מסכות טבעיות, בריאות, עור פנים" />
+    <meta name="author" content="Eden Nisuyeve, Stav Rakia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="images/logo.jpg" rel="icon" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body onload="showSlides(1)"> <!--טעינת גרליית התמונות-->
+    <div id="container">
+        <!--HEADER-->
+        <header>
+            <nav aria-label="Top Navigation" id="nav1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logopic" src="images/לוגו אתר maskit-02.png" alt="logoSite" />
+                    </a>
+                </div>
+                <div class="categories">
+                    <ul>
+                        <li><a id="notActive" href="#">למה לבחור טבעי</a></li>
+                        <li><a href="wrinkles.html">מסכות לקמטים</a></li>
+                        <li><a href="acne.html">מסכות לאקנה</a></li>
+                        <li><a id="notActive" href="#">מסכות לעור יבש</a></li>
+                        <li><a id="notActive" href="#">מסכות לפיגמנטציה</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- כותרת ראשית  -->
+            <div class="firstContent">
+                <img class="topImage" src="images/pic1.jpg" alt="" />
+                <h1 class="title1">למה מסכות פנים טבעיות?</h1>
+            </div>
+            <section id="mainInfo">
+                <h2 class="highlight">כי זה חסכוני, ידידותי לסביבה וטבעי! </h2>
+                <p class="paragraph">
+                    בלי אריזות פלסטיק מיותרות, ובמינימום השקעה כספית
+                    <br />
+                    פה תמצאו מספר מתכונים למסכות פנים
+                    <br />
+                    <b>שאפשר להכין לבד ממרכיבים טבעיים שנמצאים בכל בית</b>
+                </p>
+            </section>
+        </header>
+        <br />
+        <br />
+        <!--התוכן שלנו-->
+        <main>
+            <section id="mainInfo">
+                <h3 class="title">במה תרצו לטפל?</h3>
+                <div class="categories">
+                    <nav aria-label="maskOptions">
+                        <ul class="categories2">
+                            <li><a href="wrinkles.html">קמטים</a></li>
+                            <li><a href="acne.html">אקנה</a></li>
+                            <li><a id="notActive" href="#">יובש</a></li>
+                            <li><a id="notActive" href="#">פיגמנטציה</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <br />
+                <br />
+            </section>
+
+            <!--גלריית תמונות-->
+            <section>
+                <h2 id="gallerytitle">קבלו השראה להכין את המסכות יחד</h2>
+                <div id="gallary">
+                    <div class="container">
+                        <div class="myimages">
+                            <div class="textnumber">5 / 1</div>
+                            <img src="galleryImages/woman-applying-facial-mask-her-friend-(1).jpg" />
+                        </div>
+                        <div class="myimages">
+                            <div class="textnumber">5 / 2</div>
+                            <img src="galleryImages/woman-applying-facial-mask-her-friend-beauty-skin-care-concept.jpg" />
+                        </div>
+                        <div class="myimages">
+                            <div class="textnumber">5 / 3</div>
+                            <img src="galleryImages/woman-applying-facial-mask-her-friend.jpg" />
+                        </div>
+                        <div class="myimages">
+                            <div class="textnumber">5 / 4</div>
+                            <img src="galleryImages/women-drinking-cocktails-talking-sofa-living-room.jpg" />
+                        </div>
+                        <div class="myimages">
+                            <div class="textnumber">5 / 5</div>
+                            <img src="galleryImages/women-with-facial-mask-beauty-skin-care-concept.jpg" />
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="next" onclick="plusSlides(-1)">&#10094;</a>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="slider image" src="galleryImages/woman-applying-facial-mask-her-friend-(1).jpg" onclick="makemain(1)" alt="מורחות מסכת פילינג יחד">
+                        </div>
+                        <div class="column">
+                            <img class="slider image" src="galleryImages/woman-applying-facial-mask-her-friend-beauty-skin-care-concept.jpg" onclick="makemain(2)" alt="מוכנות עם המסכות על הפנים">
+                        </div>
+                        <div class="column">
+                            <img class="slider image" src="galleryImages/woman-applying-facial-mask-her-friend.jpg" onclick="makemain(3)" alt="מורחות מסכה לריפוי אקנה ביחד">
+                        </div>
+                        <div class="column">
+                            <img class="slider image" src="galleryImages/women-drinking-cocktails-talking-sofa-living-room.jpg" onclick="makemain(4)" alt="חושבות איזה מסכות להכין יחד">
+                        </div>
+                        <div class="column">
+                            <img class="slider image" src="galleryImages/women-with-facial-mask-beauty-skin-care-concept.jpg" onclick="makemain(5)" alt="עושות תמונה לחברים עם המסכות">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <nav aria-label="footer" class="footer">
+                <ul>
+                    <li><a href="contactUs.html">צרו קשר</a></li>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                </ul>
+                <p>כל הזכויות שמורות ליוצרות אתר MaskIt</p>
+                <p>התמונות נלקחו מאתר <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

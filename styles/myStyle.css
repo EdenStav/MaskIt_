@@ -1,0 +1,577 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap'); /*הטמעת פונט מגוגל פונט*/
+
+/* הגדרות כלליות לגוף האתר */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f5f8f6;
+    direction: rtl;
+}
+
+#notActive {
+    cursor: not-allowed;
+    color: lightgray;
+}
+
+    #notActive a:hover { /*מעבר עכבר על הקטגוריות*/
+        color: lightgray;
+    }
+
+/* תפריט ניווט */
+
+#nav1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f5f8f6;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 999;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 10px 10px 20px;
+}
+
+.logopic {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+.categories {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+    .categories ul {
+        list-style-type: none;
+    }
+
+    .categories li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .categories a {
+        display: block;
+        padding: 10px;
+        color: #6b6e5f;
+        text-decoration: none;
+        font-size: 1.2vw;
+    }
+
+        .categories a:hover { /*מעבר עכבר על הקטגוריות*/
+            background-color: #9fa6a0;
+            color: #f5f8f6;
+        }
+
+
+/*תמונות גדולות בעמודים שונים*/
+
+.topImage {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+
+#downPic > img { /*//תמונה בתחתית העמוד בעמודים הפנימיים*/
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    opacity: 0.7;
+    max-width: 100%;
+}
+
+/* פירורי לחם */
+.breadcrumbs {
+    margin-top: 135px;
+    font-size: 16px;
+    color: #6b6e5f;
+    margin-right: 25px;
+}
+
+    .breadcrumbs a {
+        color: #6b6e5f;
+        text-decoration: none;
+    }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+    .breadcrumbs ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .breadcrumbs li {
+        display: inline;
+    }
+
+.presentPage {
+    font-weight: bold;
+}
+
+.breadcrumbs li:first-child:after {
+    content: " > ";
+}
+
+/* תחתית העמוד */
+.footer {
+    background-color: #bcc3ba;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+    .footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .footer a {
+        text-decoration-line: none;
+        color: #f5f8f6;
+    }
+
+        .footer a:hover {
+            background-color: #9fa6a0;
+            color: #f5f8f6;
+        }
+
+footer nav p {
+    font-size: 14px;
+    color: #6b6e5f;
+}
+
+
+/* עמוד בית */
+
+#mainInfo {
+    text-align: center;
+    color: #6b6e5f;
+}
+
+.firstContent { /*כותרות אמצעיות לכל העמודים */
+    margin-top: 30px;
+    text-align: center;
+    color: #6b6e5f;
+}
+
+    .firstContent h1 {
+        font-size: 40px;
+    }
+
+section .highlight {
+    font-size: 26px;
+}
+
+.highlight {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.paragraph {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.categories2 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+    .categories2 li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .categories2 a {
+        display: block;
+        padding: 10px;
+        color: #6b6e5f;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        box-shadow: 0px 0px 10px #9fa6a0;
+    }
+
+        .categories2 a:hover {
+            background-color: #9fa6a0;
+            color: #f5f8f6;
+        }
+
+/*דף מסכות לקמטים ולאקנה*/
+
+.myHeader h1 { /*//כותרות בצד ימין בעמודים הפנימיים*/
+    font-size: 60px;
+    color: #6b6e5f;
+    text-align: right;
+    margin-top: 3px;
+    margin-right:25px;
+}
+
+#allMasks { /*//כותרות של כל סוגי המסכות*/
+    text-align: right;
+    color: #6b6e5f;
+}
+
+.mask-title {
+    font-size: 25px;
+    text-decoration-line: underline;
+    margin-right: 25px;
+}
+
+.mask-subtitle {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.mask-description {
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.mask-images img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 115px;
+    box-shadow: 0px 0px 10px #9fa6a0;
+}
+
+.markThis a {
+    background-color: #9fa6a0;
+    color: #f5f8f6;
+}
+
+.questions {
+    margin-top: 60px;
+    text-align: center;
+    color: #6b6e5f;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/*כפתור צור קשר בעמודים הפנימיים*/
+.button {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #bcc3ba;
+    color: #6b6e5f;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+
+    .contact-button:hover {
+        background-color: #9fa6a0;
+        color: #f5f8f6;
+    }
+
+
+/*עיצוב דף צרו קשר*/
+.startContant {
+    font-size: 18px;
+    color: #6b6e5f;
+    text-align: center;
+}
+
+.allFormPage {
+    display: flex; /*יכלנו להשתמש בבלוק אבל היה יותר נוח בפלקס*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 400px;
+    background-color: #f5f8f6;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+    form div {
+        margin-bottom: 20px;
+        width: 95%;
+    }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #6b6e5f;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+select { /*העיצוב של הקטגוריות הנפתחות*/
+    width: 100%;
+    padding: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #bcc3ba;
+    color: #6b6e5f;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Fredoka', sans-serif;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #9fa6a0;
+        color: #f5f8f6;
+    }
+
+.gender {
+    border: none;
+    padding-right: 1px;
+}
+
+#gendertitle {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    color: #6b6e5f;
+}
+
+/*דף אודות*/
+
+.about {
+    margin-right: 25px;
+}
+
+.page-list {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+    .page-list li {
+        margin-bottom: 8px;
+    }
+
+    .page-list a {
+        color: #6b6e5f;
+    }
+
+        .page-list a:hover {
+            font-weight: bold;
+        }
+
+.aboutInfo {
+    font-size: 18px;
+    color: #6b6e5f;
+}
+
+.aboutTitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6b6e5f;
+    text-align: right;
+}
+
+#hitLogo {
+    width: 13%;
+    height: auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*דף מפת האתר*/
+.allMapPage {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+    .allMapPage ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .allMapPage li {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+.firstContent ul {
+    justify-content: center;
+}
+
+.firstContent li {
+    width: 100px;
+    height: 100px;
+    background-color: #9fa6a0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allMapPage li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #6b6e5f;
+    font-size: 16px;
+}
+
+    .allMapPage li a:hover {
+        color: #bcc3ba;
+    }
+
+
+
+/*גלריית תמונות*/
+
+
+.myimages img {
+    width: 100%;
+    margin: 0 auto; /*גורם למרכוז*/
+    position: relative;
+}
+
+#gallary {
+    width: 40%;
+    margin: 0 auto; /*גורם למרכוז*/
+    position: relative;
+    height: auto;
+    top: 30px;
+    padding-bottom: 200px;
+}
+
+/* חיצים למעבר בין תמונות */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%; /* שליטה במיקום החצים לאורך התמונה הגדולה */
+    color: white;
+    width: auto;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #bcc3ba;
+}
+
+/* מיקום החיצים קדימה ואחורה */
+.next {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* שקיפות שחורה על החץ במעבר עכבר */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* מספור התמונות */
+.textnumber {
+    color: #6b6e5f;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    padding: 8px 4px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+/* מלבן תיאור התמונה */
+.caption-container {
+    width: 100%;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #6b6e5f;
+    padding: 0.2px;
+    color: white;
+}
+
+
+/* חמשת התמונות מתחת */
+.column {
+    float: right;
+    width: 20%;
+}
+
+/* הוספת שקיפות */
+.slider {
+    opacity: 0.6;
+    width: 100%;
+}
+
+    .addopacity,
+    .slider:hover {
+        opacity: 0.1;
+    }
+
+#gallerytitle {
+    text-align: center;
+    color: #6b6e5f;
+    padding-top: 40px;
+}
